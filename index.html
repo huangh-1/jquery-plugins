@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bakery</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <span class="logo"><a href="index.html">The Bakery</a></span>
+        <button id="mobile-menu-button">
+            <img id="mobile-menu-icon" src="assets/images/menu.svg">
+            <span id="mobile-menu-text">Menu</span>
+        </button>
+        <menu id="main-menu" class="display-flex display-none-mobile">
+            <li><a href="">About Us</a></li>
+            <li class="dropdown-trigger">
+                <button>Baked Goods</button>
+                <menu class="dropdown-menu">
+                    <li>
+                        <a href="">Cakes</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="">Pastries</a>
+                    </li>
+                </menu>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </menu>
+      
+    </nav>
+
+    <section>
+        <h1>Bakery Products</h1>
+        <div class="bakery-container">
+            <img src="assets/images/cake1.jpg">
+            <img src="assets/images/cake2.jpg">
+            <img src="assets/images/cake3.jpg">
+            <img src="assets/images/cake4.jpg">
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

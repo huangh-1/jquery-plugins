@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightpink;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+li {
+    list-style: none;
+}
+
+nav a, nav button {
+    color: lightpink;
+    text-decoration: none;
+    transition: color .5s;
+
+}
+
+nav a:hover, nav button:hover {
+    color: white;
+
+}
+
+button {
+    font-family: Helvetica;
+    font-size: 24px;
+    background-color: transparent;
+    border: 0px;
+    
+}
+
+.logo a {
+    color: white;
+}
+
+nav {
+
+    background-color: mediumvioletred;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 24px;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+
+
+#main-menu {
+ 
+    gap: 30px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.dropdown-menu {
+    background-color: mediumvioletred;
+    position: absolute;
+    padding: 20px;
+    display: none;
+}
+
+.dropdown-trigger:hover .dropdown-menu {
+    display:block;
+}
+
+#mobile-menu-button {
+    display: none;
+}
+
+.bakery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bakery-container img {
+
+  width: 00px;
+  height: 300px;
+    object-fit: cover;
+
+}
+
+/* mobile styles */
+
+@media (max-width: 800px) {
+    #mobile-menu-button {
+        display: block;
+    }
+
+    #main-menu {
+      margin-top: 20px;
+      width: 100%;
+      flex-direction: column;
+      
+      
+        
+    }
+
+    .dropdown-menu {
+        position: relative;
+        display: block;
+    }
+
+    #main-menu > li {
+        border-top: 2px solid linen;
+        padding-top: 30px;
+    }
+
+    /* we will toggle this class with js. 
+    putting it in a media query ensures it will only apply on a mobile */
+   .display-none-mobile {
+        display: none;
+    }
+}
