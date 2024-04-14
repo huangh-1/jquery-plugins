@@ -10,7 +10,7 @@
     <nav>
         <span class="logo"><a href="index.html">The Bakery</a></span>
         <button id="mobile-menu-button">
-            <img id="mobile-menu-icon" src="assets/images/menu.svg">
+            <img id="mobile-menu-icon" src="assets/images/menu.svg"><br>
             <span id="mobile-menu-text">Menu</span>
         </button>
         <menu id="main-menu" class="display-flex display-none-mobile">
@@ -36,17 +36,44 @@
       
     </nav>
 
-    <section>
-        <h1>Bakery Products</h1>
-        <div class="bakery-container">
-            <img src="assets/images/cake1.jpg">
-            <img src="assets/images/cake2.jpg">
-            <img src="assets/images/cake3.jpg">
-            <img src="assets/images/cake4.jpg">
+    <section id="bakery">
+     
+        <div class="bakery-flex-container">
+            <a data-bakery-image href="#bakery-overlay" rel="modal:open"><img src="assets/images/cake1.jpg"></a>
+            <a data-bakery-image href="#bakery-overlay" rel="modal:open"><img src="assets/images/cake2.jpg"></a>
+            <a data-bakery-image href="#bakery-overlay" rel="modal:open"><img src="assets/images/cake3.jpg"></a>
+            <a data-bakery-image href="#bakery-overlay" rel="modal:open"><img src="assets/images/cake4.jpg"></a>
         </div>
+        <div id="bakery-overlay" class="modal">
+            <img id="overlay-image" src="assets/images/cake1.jpg">
+          </div>
     </section>
-    
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="assets/images/cake1.jpg"></li>
+                  <li class="splide__slide"><img src="assets/images/cake2.jpg"></li>
+                   <li class="splide__slide"><img src="assets/images/cake3.jpg"></li>
+                   <li class="splide__slide"><img src="assets/images/cake4.jpg"></li>
+              </ul>
+        </div>
+      </section>
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+ <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<!-- splide -->
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+<!-- my script -->
+<script src="assets/js/script.js"></script>
 </body>
 </html>

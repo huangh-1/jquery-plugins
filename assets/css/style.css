@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     background-color: lightpink;
     font-size: 18px;
@@ -73,20 +77,43 @@ nav {
 #mobile-menu-button {
     display: none;
 }
+/* bakery section */
 
-.bakery-container {
+.bakery-flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
-.bakery-container img {
+.bakery-flex-container img {
 
-  width: 00px;
+  width: 350px;
   height: 300px;
     object-fit: cover;
 
+}
+
+#bakery-overlay img {
+ width: 100%;
+}
+
+.modal {
+    max-width: 100% !important;
+}
+
+.splide  {
+    width: 80%;
+  margin: auto;
+}
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+#mobile-menu-icon {
+    width: 30px;
 }
 
 /* mobile styles */
