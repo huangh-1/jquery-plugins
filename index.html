@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <nav>
+        <span class="logo">
+            <a href="index.html"> The Bakery</a>
+        </span>
+
+        <button id="mobile-menu-button">
+            <img id="mobile-menu-icon" src="assets/images/menu.svg">
+            <br>
+            <span id="mobile-menu-text">Menu</span>
+        </button>
+        
+        <menu id="main-menu" class="display-none-mobile display-flex">
+            <li>
+                <a href=""> About Us</a>
+            </li>
+            <li class="dropdown-trigger"> 
+                <button>Baked Goods</button>
+                <menu class="dropdown-menu">
+                    <!--ctrl shift p > wrap a, anchor-->
+                    <li><a href="">Cakes</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Pasteries</a></li>
+                </menu>
+            </li>
+            <li><a href="">Contact Us</a></li>
+        </menu>
+    </nav>
+    <!---make sure to go to the jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
